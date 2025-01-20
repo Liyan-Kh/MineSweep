@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap'); /* Importing Persian font */
+
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+    padding: 20px; /* Consistent padding */
+}
+
+/* Section and container styling */
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background: #1e1e1e; /* Dark gray background for sections */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header {
+    text-align: center;
+    background: #181818;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff3333; /* Red links for bold look */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #3399ff; /* Blue color on hover for a refreshing feel */
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #ffff33; /* Yellow headers for a striking vibe */
+    font-weight: bold;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff3333; /* Red button background */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, button:focus {
+    background-color: #3399ff; /* Blue on hover */
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    background: #181818;
+    padding: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #ff3333; /* Red footer text */
+}
+
+.back-to-top {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.back-to-top a {
+    color: #ff3333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-top a:hover,
+.back-to-top a:focus {
+    color: #ffff33; /* Yellow on hover */
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    border: 2px solid #ff3333; /* Red border for images */
+    border-radius: 5px;
+}
+/* CSS styling for images */
+img.grid-image {
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    display: block;
+    margin: 20px auto; /* Center the images */
+    border: 2px solid #ffffff; /* White border for consistency */
+    border-radius: 5px;
+}
+
+/* Ensuring flexibility for intro image */
+header img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px auto; /* Consistent with other sections */
+}
+
+
+p[lang="fa"], h1[lang="fa"], h2[lang="fa"], h3[lang="fa"], h4[lang="fa"], li[lang="fa"] {
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl; /* Right-to-left text direction for Persian */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, nav, section, footer {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
